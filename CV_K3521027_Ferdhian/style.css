@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: lightslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
+}
+.container .left_side{
+    position: relative;
+    background: darkblue;
+    padding: 40px;
+}
+.bio{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.bio .img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.bio .img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bio h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.bio h2 span{
+    font-size: 0.475em;
+    font-weight: 300;
+}
+.kontak{
+    padding-top: 40px;
+}
+.judul{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.kontak ul{
+    position: relative;
+}
+.kontak ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+    list-style-type: square;
+    color: skyblue;
+    margin-left: 15px;
+}
+.kontak ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+.kontak .edukasi li{
+    margin-bottom: 15px;
+}
+.satu ul li{
+    color: #fff;
+    list-style-type: none;
+    margin-left: 0;
+}
+.satu ul li h3{
+    color: skyblue;
+    font-weight: 300;
+}
+.satu ul li h4{
+    font-weight: 500;
+}
+.container .right_side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.hal{
+    margin-bottom: 50px;
+}
+.hal:last-child{
+    margin-bottom: 0;
+}
+.judul_{
+    color: darkblue;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.hal ul li{
+    color: black;
+    margin-top: 10px;
+    list-style-type: square;
+    margin-left: 15px;
+}
+.hal .dua ul{
+    color: skyblue;
+}
+.skill .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skill .box h4{
+    text-transform: uppercase;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.skill .box .persen{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: black;
+    margin-top: 17px;
+}
+.skill .box .persen div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: skyblue;
+}
+@media (max-width: 1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width: 600px){
+    .hal .box{
+        flex-direction: column;
+    }
+    .skill .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

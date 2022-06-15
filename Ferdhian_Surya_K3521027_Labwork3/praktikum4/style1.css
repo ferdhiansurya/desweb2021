@@ -1,0 +1,23 @@
+.header{
+background-color: red;
+padding-left: 50%;
+padding-right: 50%;
+}
+.navigation{
+background-color: yellow;
+padding-left: 50%;
+padding-right: 50%;
+}
+.sidebar_kiri{
+background-color: red;
+}
+.content{
+background-color: grey;
+margi
+}
+.sidebar_kanan{
+background-color: red;
+}
+.footer{
+background-color:blue;
+}
