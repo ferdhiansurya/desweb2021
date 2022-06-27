@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAS Properti</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-white text-dark">
+    <nav class="navbar navbar-expand-lg bg-warning shadow-lg fixed-top text-dark">
+        <div class="container">
+          <a class="judul navbar-brand text-uppercase" href="#"><strong>Rumah Idaman Pasutri</strong></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse text-left" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="navigasi nav-item">
+                <a class="nav-link" href="#properti">Properti</a>
+              </li>
+              <li class="navigasi nav-item">
+                <a class="nav-link" href="#lainnya">Lainnya</a>
+              </li>
+              <li class="navigasi nav-item">
+                <a class="nav-link" href="#login">Login</a>
+              </li>
+            </ul>
+            </div>
+        </div>
+      </nav>
+    <div class="banner">
+        <button class="tombol bg-danger" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="ava.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <br><input type="text" placeholder="Enter Username" name="uname" required>
+
+      <br><label for="psw"><b>Password</b></label>
+      <br><input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+        <div class="container text-center">
+            <h4 class="display-6 text-white">Selamat Datang!</h4>
+            <h3 class="display-1 text-white">Rumah Impian Anda Ada Disini</h3>
+            <br><a href="#properti">
+                <button type="button" class="btn btn-danger btn-lg">Cek Properti</button>
+            </a>
+        </div>
+    </div>
+    <div class="container-fluid layanan pt-5 pb-5">
+        <div class="container text-center">
+            <h2 class="display-3" id="properti">Properti Tebaik</h2>
+            <p>Cek rekomendasi properti terbaik dari kami serta informasi terlengkapnya</p>
+            <div class="row pt-4">
+                <div class="col-md-4">
+                    <img src="gb.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
+                    <h3 class="mt-3">Ceria Residance</h3>
+                    <p>
+                        Ceria residance merupakan salah satu unit perumahan
+                        yang dibilang cukup exclusive dikalangannya karena... 
+                    </p>
+                    <a href="#ceria.html" class="btn btn-warning text-dark" role="button">Selengkapnya</a>
+                </div>
+                <div class="col-md-4">
+                    <img src="gb1.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
+                    <h3 class="mt-3">Residance Evil</h3>
+                    <p>
+                        Residance evil boleh menjadi salah satu objek
+                        pilihan anda dan keluarga anda untuk berteduh...
+                    </p>
+                    <a href="#" class="a btn btn-warning text-dark" role="button">Selengkapnya</a>
+                </div>
+                <div class="col-md-4">
+                    <img src="gb2.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
+                    <h3 class="mt-3">Algoritma Residance</h3>
+                    <p>
+                        Algoritma residance adalah unit perumahan yang terletak
+                        di pinggir kota yang terbilang cukup nyaman...
+                    </p>
+                    <a href="#" class="btn btn-warning text-dark" role="button">Selengkapnya</a>
+                </div>
+                <div class="col-md-4 pt-4">
+                    <img src="gb3.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
+                    <h3 class="mt-3">Rumah Teduh</h3>
+                    <p>
+                        Boleh dibilang rumah teduh menjadi salah satu opsi
+                        dengan biaya terjangkau namun kualitas bintang...
+                    </p>
+                    <a href="#" class="btn btn-warning text-dark" role="button">Selengkapnya</a>
+                </div>
+                <div class="col-md-4 pt-4">
+                    <img src="gb4.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
+                    <h3 class="mt-3">Mulmed</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur 
+                        adipisicing elit. Dignissimos, nisi.
+                    </p>
+                    <a href="#" class="btn btn-warning text-dark" role="button">Selengkapnya</a>
+                </div>
+                <div class="col-md-4 pt-4">
+                    <img src="gb5.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
+                    <h3 class="mt-3">Mulmed</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur 
+                        adipisicing elit. Dignissimos, nisi.
+                    </p>
+                    <a href="#" class="btn btn-warning text-dark" role="button">Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-warning pt-4 pb-4" align="center" >
+            <a href="#">
+                <i class="fa fa-facebook fa-lg white-text p-3 fa-2x mt-4 text-dark"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-twitter fa-lg white-text p-3 fa-2x text-dark"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-google-plus fa-lg white-text p-3 fa-2x text-dark"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-instagram fa-lg white-text p-3 fa-2x text-dark"></i>
+            </a>
+            </div>
+            <div class="container-fluid bg-warning text-light text-dark" align="center">
+                <a class="text-dark">
+                <p>© 24.co 2020 — 2022
+                Rumah Idaman Pasutri (PT Web Properti Indonesia) merupakan bagian dari 24 Group.</p>
+                </a>
+            </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+    crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
